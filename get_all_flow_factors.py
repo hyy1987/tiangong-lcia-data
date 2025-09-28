@@ -24,10 +24,11 @@ def get_flow_factors(json_file_path):
         if isinstance(factors, list):
             for factor in factors:
                 ff = factor.get("referenceToFlowDataSet", {})
+                exchange_dir = factor.get("exchangeDirection", None)
                 my_factors.append({
                     "@refObjectId": ff.get("@refObjectId", None),
                     "@version": ff.get("@version", None),
-                    "exchangeDirection": factor.get("exchangeDirection", None),
+                    "exchangeDirection": exchange_dir.upper() if exchange_dir else None,
                     "factor": [{
                         "key": id,
                         "value": factor.get("meanValue", None),
@@ -36,10 +37,11 @@ def get_flow_factors(json_file_path):
         elif isinstance(factors, dict):
                 factor = factors
                 ff = factor.get("referenceToFlowDataSet", {})
+                exchange_dir = factor.get("exchangeDirection", None)
                 my_factors.append({
                     "@refObjectId": ff.get("@refObjectId", None),
                     "@version": ff.get("@version", None),
-                    "exchangeDirection": factor.get("exchangeDirection", None),
+                    "exchangeDirection": exchange_dir.upper() if exchange_dir else None,
                     "factor": [{
                         "key": id,
                         "value": factor.get("meanValue", None),
