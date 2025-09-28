@@ -1,0 +1,278 @@
+{
+    "LCIAMethodDataSet": {
+        "@xmlns": "http://lca.jrc.it/ILCD/LCIAMethod",
+        "@xmlns:common": "http://lca.jrc.it/ILCD/Common",
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@version": "1.1",
+        "@xsi:schemaLocation": "http://lca.jrc.it/ILCD/LCIAMethod ../../schemas/ILCD_LCIAMethodDataSet.xsd",
+        "LCIAMethodInformation": {
+            "dataSetInformation": {
+                "common:UUID": "b2ad6110-c78d-11e6-9d9d-cec0c932ce01",
+                "common:name": [
+                    {
+                        "@xml:lang": "en",
+                        "#text": "Resource use, fossils"
+                    },
+                    {
+                        "@xml:lang": "zh",
+                        "#text": "资源消耗, 化石能源"
+                    }
+                ],
+                "methodology": "Environmental Footprint",
+                "impactCategory": "Abiotic resource depletion",
+                "impactIndicator": "Abiotic resource depletion fossil fuels (ADP-fossil)",
+                "common:generalComment": {
+                    "@xml:lang": "en",
+                    "#text": "ADP for energy carriers, based on van Oers et al. 2002 as implemented in CML, v. 4.8 (2016)"
+                }
+            },
+            "quantitativeReference": {
+                "referenceQuantity": {
+                    "@refObjectId": "93a60a56-a3c8-11da-a746-0800200c9a66",
+                    "@type": "flow property data set",
+                    "@uri": "../flowproperties/93a60a56-a3c8-11da-a746-0800200c9a66.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "MJ"
+                    }
+                }
+            },
+            "time": {
+                "referenceYear": {
+                    "@xml:lang": "en",
+                    "#text": "2017"
+                },
+                "duration": {
+                    "@xml:lang": "en",
+                    "#text": "time independent"
+                }
+            },
+            "geography": {
+                "interventionLocation": "GLO",
+                "impactLocation": "GLO",
+                "geographicalRepresentativenessDescription": {
+                    "@xml:lang": "en",
+                    "#text": "Applicable to world"
+                }
+            },
+            "impactModel": {
+                "modelName": "Abiotic resource depletion (ADP fossil)",
+                "modelDescription": {
+                    "@xml:lang": "en",
+                    "#text": "Depletion model based on use-to-availability ratio. Full substitution among fossil energy carriers is assumed."
+                },
+                "consideredMechanisms": {
+                    "@xml:lang": "en",
+                    "#text": "Depletion of fossil energy sources"
+                }
+            }
+        },
+        "modellingAndValidation": {
+            "useAdviceForDataSet": {
+                "@xml:lang": "en"
+            },
+            "LCIAMethodNormalisationAndWeighting": {
+                "typeOfDataSet": "Mid-point indicator",
+                "LCIAMethodPrinciple": "other",
+                "deviationsFromLCIAMethodPrinciple": {
+                    "@xml:lang": "en",
+                    "#text": "AoP-Damage model"
+                },
+                "normalisation": "false",
+                "weighting": "false"
+            },
+            "dataSources": null,
+            "completeness": {
+                "inventoryItems": "6"
+            }
+        },
+        "administrativeInformation": {
+            "common:commissionerAndGoal": {
+                "common:referenceToCommissioner": {
+                    "@refObjectId": "8921eddc-df44-4bb0-b3fc-61905de82953",
+                    "@type": "contact data set",
+                    "@uri": "../contacts/8921eddc-df44-4bb0-b3fc-61905de82953.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "Dutch  Ministry of Transport, Public Works and Water Management"
+                    }
+                },
+                "common:project": {
+                    "@xml:lang": "en",
+                    "#text": "Abiotic resource depletion in LCA"
+                },
+                "common:intendedApplications": {
+                    "@xml:lang": "en",
+                    "#text": "Baseline method to assess depletion of abiotic resources recommended in the Dutch LCA Handbook"
+                }
+            },
+            "dataGenerator": {
+                "common:referenceToPersonOrEntityGeneratingTheDataSet": {
+                    "@refObjectId": "491aeae2-152f-4611-bd5f-297f4e1bfd4d",
+                    "@type": "contact data set",
+                    "@uri": "../contacts/491aeae2-152f-4611-bd5f-297f4e1bfd4d.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "European  Commission - JRC directorate D"
+                    }
+                }
+            },
+            "dataEntryBy": {
+                "common:timeStamp": "2016-12-20T15:25:20.840+01:00",
+                "common:referenceToDataSetFormat": {
+                    "@refObjectId": "a97a0155-0234-4b87-b4ce-a45da52f2a40",
+                    "@type": "source data set",
+                    "@uri": "../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "ILCD  format"
+                    }
+                },
+                "common:referenceToConvertedOriginalDataSetFrom": {
+                    "@refObjectId": "ddc6e944-01d4-484f-845e-9f42c440bc2b",
+                    "@type": "source data set",
+                    "@uri": "../sources/ddc6e944-01d4-484f-845e-9f42c440bc2b.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "Van Oers  et. al 2002"
+                    }
+                },
+                "common:referenceToPersonOrEntityEnteringTheData": {
+                    "@refObjectId": "1c00faca-654b-442c-b972-b5240ae9e076",
+                    "@type": "contact data set",
+                    "@uri": "../contacts/1c00faca-654b-442c-b972-b5240ae9e076.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "Valentina  Castellani"
+                    }
+                },
+                "recommendationBy": {
+                    "level": "Level III",
+                    "meaning": {
+                        "@xml:lang": "en"
+                    }
+                }
+            },
+            "publicationAndOwnership": {
+                "common:dateOfLastRevision": "2016-12-20T00:00:00",
+                "common:dataSetVersion": "01.00.010",
+                "common:permanentDataSetURI": null,
+                "common:workflowAndPublicationStatus": "Data set finalised; entirely published",
+                "common:referenceToOwnershipOfDataSet": {
+                    "@refObjectId": "491aeae2-152f-4611-bd5f-297f4e1bfd4d",
+                    "@type": "contact data set",
+                    "@uri": "../contacts/491aeae2-152f-4611-bd5f-297f4e1bfd4d.xml",
+                    "common:shortDescription": {
+                        "@xml:lang": "en",
+                        "#text": "JRC"
+                    }
+                },
+                "common:copyright": "true",
+                "common:accessRestrictions": {
+                    "@xml:lang": "en",
+                    "#text": "The data set can be used free of charge by anybody to perform LCA studies, to distribute it to third parties, to convert it to other formats, to develop own data sets etc. as long as the ILCD format is mantained. Please note e.g. that reference must be given to the 'Owner of data set' (who may have additional copyright and license requirements on the particular data set that are to be met). Please note also that any modifications/omissions of the data set results in invalidity of any existing 'Official recommendation of data set by governmental body'"
+                }
+            }
+        },
+        "characterisationFactors": {
+            "factor": [
+                {
+                    "referenceToFlowDataSet": {
+                        "@refObjectId": "fe0acd60-3ddc-11dd-a6f9-0050c2490048",
+                        "@type": "flow data set",
+                        "@uri": "../flows/fe0acd60-3ddc-11dd-a6f9-0050c2490048.xml",
+                        "@version": "04.00.004",
+                        "common:shortDescription": {
+                            "@xml:lang": "en",
+                            "#text": "brown coal(Radioactivity,MJ,Non-renewable energy resources from ground)"
+                        }
+                    },
+                    "exchangeDirection": "Input",
+                    "meanValue": "1.00E+00",
+                    "dataDerivationTypeStatus": "Unknown derivation",
+                    "generalComment": null
+                },
+                {
+                    "referenceToFlowDataSet": {
+                        "@refObjectId": "fe0acd60-3ddc-11dd-a6f8-0050c2490048",
+                        "@type": "flow data set",
+                        "@uri": "../flows/fe0acd60-3ddc-11dd-a6f8-0050c2490048.xml",
+                        "@version": "04.00.004",
+                        "common:shortDescription": {
+                            "@xml:lang": "en",
+                            "#text": "crude oil(Radioactivity,MJ,Non-renewable energy resources from ground)"
+                        }
+                    },
+                    "exchangeDirection": "Input",
+                    "meanValue": "1.00E+00",
+                    "dataDerivationTypeStatus": "Unknown derivation",
+                    "generalComment": null
+                },
+                {
+                    "referenceToFlowDataSet": {
+                        "@refObjectId": "fe0acd60-3ddc-11dd-a6fc-0050c2490048",
+                        "@type": "flow data set",
+                        "@uri": "../flows/fe0acd60-3ddc-11dd-a6fc-0050c2490048.xml",
+                        "@version": "04.00.004",
+                        "common:shortDescription": {
+                            "@xml:lang": "en",
+                            "#text": "hard coal(Radioactivity,MJ,Non-renewable energy resources from ground)"
+                        }
+                    },
+                    "exchangeDirection": "Input",
+                    "meanValue": "1.00E+00",
+                    "dataDerivationTypeStatus": "Unknown derivation",
+                    "generalComment": null
+                },
+                {
+                    "referenceToFlowDataSet": {
+                        "@refObjectId": "fe0acd60-3ddc-11dd-a6fa-0050c2490048",
+                        "@type": "flow data set",
+                        "@uri": "../flows/fe0acd60-3ddc-11dd-a6fa-0050c2490048.xml",
+                        "@version": "04.00.004",
+                        "common:shortDescription": {
+                            "@xml:lang": "en",
+                            "#text": "natural gas(Radioactivity,MJ,Non-renewable energy resources from ground)"
+                        }
+                    },
+                    "exchangeDirection": "Input",
+                    "meanValue": "1.00E+00",
+                    "dataDerivationTypeStatus": "Unknown derivation",
+                    "generalComment": null
+                },
+                {
+                    "referenceToFlowDataSet": {
+                        "@refObjectId": "e2fba107-6555-11dd-ad8b-0800200c9a66",
+                        "@type": "flow data set",
+                        "@uri": "../flows/e2fba107-6555-11dd-ad8b-0800200c9a66.xml",
+                        "@version": "04.00.004",
+                        "common:shortDescription": {
+                            "@xml:lang": "en",
+                            "#text": "peat(Radioactivity,MJ,Non-renewable energy resources from ground)"
+                        }
+                    },
+                    "exchangeDirection": "Input",
+                    "meanValue": "1.00E+00",
+                    "dataDerivationTypeStatus": "Unknown derivation",
+                    "generalComment": null
+                },
+                {
+                    "referenceToFlowDataSet": {
+                        "@refObjectId": "3e4d2966-6556-11dd-ad8b-0800200c9a66",
+                        "@type": "flow data set",
+                        "@uri": "../flows/3e4d2966-6556-11dd-ad8b-0800200c9a66.xml",
+                        "@version": "03.00.004",
+                        "common:shortDescription": {
+                            "@xml:lang": "en",
+                            "#text": "uranium(Radioactivity,MJ,Non-renewable energy resources from ground)"
+                        }
+                    },
+                    "exchangeDirection": "Input",
+                    "meanValue": "1.00E+00",
+                    "dataDerivationTypeStatus": "Unknown derivation",
+                    "generalComment": null
+                }
+            ]
+        }
+    }
+}
