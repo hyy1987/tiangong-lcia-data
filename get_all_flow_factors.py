@@ -1,8 +1,9 @@
 
-import os
 import glob
 import json
+import os
 from pathlib import Path
+
 
 # 获取LCIAMethodDataSet.characterisationFactors.factor
 def get_flow_factors(json_file_path):
@@ -115,9 +116,18 @@ def get_all_flow_factors():
     
     print(f"合并完成，总共 {len(merge_factors)} 个唯一因子")
     return merge_factors
-        
+
+def build_flow_factor_kv_map():
+    """构建因子键值对映射"""
+    factors = get_all_flow_factors()
+    factor_kv_map = {}
+    for factor in factors:
+        key = (factor["@refObjectId"] + ":" + factor["exchangeDirection"])
+        factor_kv_map[key] = factor
+    return factor_kv_map
+
 if __name__ == "__main__":
-    all_factors = get_all_flow_factors()
+    all_factors = build_flow_factor_kv_map()
     # 把all_factors写入data/flow_factors.json
     output_file = os.path.join("data", "flow_factors.json")
     output_gz_file = output_file + '.gz'
